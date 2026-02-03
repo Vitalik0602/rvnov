@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="rvDrive: покупка, аренда, аренда с выкупом авто в Москве. Автоломбард, автоподбор, комиссия, срочный выкуп. Надежные машины!">
+    <meta name="keywords" content="купить авто Москва, аренда автомобилей, аренда с выкупом, автоломбард, автоподбор, комиссия авто, срочный выкуп автомобилей, продажа машин, бюджетные авто, премиум автомобили, арендовать машину, rvDrive, авто в кредит, машины под залог, подбор авто по параметрам, надежные автомобили, автосалон Москва, аренда машин недорого">
+    <title>Автосалон rvDrive - Аренда, выкуп и продажа авто в Москве!</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "rvDrive",
+        "url": "https://rvdrive.ru",
+        "logo": "https://rvdrive.ru/img/logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "улица Адмирала Лазарева, д. 2",
+            "addressLocality": "Москва",
+            "addressCountry": "RU"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+79915914704",
+            "contactType": "customer service"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner-circle"></div>
+            <span class="loading-text">rvDrive</span>
+        </div>
+    </div>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <a href="tel:+79915914704" class="floating-btn phone-btn" aria-label="Позвонить">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/89915914704" class="floating-btn whatsapp-btn" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://t.me/rvDrive_Auto" class="floating-btn telegram-btn" aria-label="Telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header class="modern-header">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">rv</span>
+                        <span class="logo-accent">Drive</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+
+            <nav class="main-nav">
+                <div class="nav-container">
+                    <a href="#home" class="nav-link" data-text="Главная">
+                        <i class="fas fa-home"></i>
+                        <span>Главная</span>
+                    </a>
+                    <a href="#cars" class="nav-link" data-text="Автомобили">
+                        <i class="fas fa-car"></i>
+                        <span>Автомобили</span>
+                    </a>
+                    <a href="#services" class="nav-link" data-text="Услуги">
+                        <i class="fas fa-cogs"></i>
+                        <span>Услуги</span>
+                    </a>
+                    <a href="#offers" class="nav-link" data-text="Акции">
+                        <i class="fas fa-percentage"></i>
+                        <span>Акции</span>
+                    </a>
+                    <a href="#testimonials" class="nav-link" data-text="Отзывы">
+                        <i class="fas fa-star"></i>
+                        <span>Отзывы</span>
+                    </a>
+                    <a href="#contacts" class="nav-link" data-text="Контакты">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Контакты</span>
+                    </a>
+                    <a href="#request" class="nav-link cta-nav" data-text="Заявка">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Оставить заявку</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:+79915914704" class="phone-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+7 (991) 591-47-04</span>
+                </a>
+                <div class="social-mini">
+                    <a href="https://t.me/rvDrive_Auto" target="_blank" aria-label="Telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="https://wa.me/89915914704" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-gradient"></div>
+        <div class="particles-container" id="particles-js"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-shield-alt"></i> Гарантия качества</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">Ваш путь к</span>
+                    <span class="title-line accent">идеальному автомобилю</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Покупка, аренда и аренда с выкупом автомобилей в Москве. 
+                    Премиум-автомобили по доступным ценам с гарантией надежности.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="250">0</span>
+                        <span class="stat-label">Автомобилей в наличии</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="98">0</span>
+                        <span class="stat-label">Клиентов довольны</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5">0</span>
+                        <span class="stat-label">Лет на рынке</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#cars" class="btn-primary">
+                        <i class="fas fa-search"></i>
+                        Подобрать авто
+                    </a>
+                    <a href="#request" class="btn-secondary">
+                        <i class="fas fa-calendar-check"></i>
+                        Тест-драйв
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="car-card floating">
+                    <div class="car-card-image">
+                        <img src="img/audi2.jpg" alt="Audi Q8" loading="lazy">
+                    </div>
+                    <div class="car-card-badge">
+                        <span class="badge-sale">Спецпредложение</span>
+                    </div>
+                    <div class="car-card-content">
+                        <h3>Audi Q8 2019</h3>
+                        <div class="car-price">
+                            <span class="price-main">4 300 000 ₽</span>
+                            <span class="price-month">от 49 980 ₽/мес</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <a href="#cars" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="cars-section">
+        <div class="section-header">
+            <h2 class="section-title">Наши автомобили</h2>
+            <p class="section-subtitle">Широкий выбор автомобилей для любых целей и бюджета</p>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">Все</button>
+            <button class="filter-tab" data-filter="premium">Премиум</button>
+            <button class="filter-tab" data-filter="business">Бизнес</button>
+            <button class="filter-tab" data-filter="suv">Внедорожники</button>
+            <button class="filter-tab" data-filter="budget">Бюджетные</button>
+        </div>
+        
+        <div class="cars-grid">
+            <!-- Audi Q8 -->
+            <div class="car-card-modern" data-category="premium suv">
+                <div class="car-image-wrapper">
+                    <img src="img/audi2.jpg" alt="Audi Q8" loading="lazy">
+                    <div class="car-badges">
+                        <span class="badge-new">Новое поступление</span>
+                        <span class="badge-sale">-15%</span>
+                    </div>
+                    <div class="car-overlay">
+                        <a href="model1.html" class="overlay-btn">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                        <button class="overlay-btn favorite-btn" aria-label="Добавить в избранное">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-info">
+                    <h3>Audi Q8 3.0 TFSI quattro</h3>
+                    <div class="car-specs">
+                        <span class="spec-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            2019
+                        </span>
+                        <span class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            3.0 л
+                        </span>
+                        <span class="spec-item">
+                            <i class="fas fa-cog"></i>
+                            АКПП
+                        </span>
+                    </div>
+                    <div class="car-price-modern">
+                        <div class="price-block">
+                            <span class="price-current">4 300 000 ₽</span>
+                            <span class="price-old">5 000 000 ₽</span>
+                        </div>
+                        <span class="price-month">от 49 980 ₽/мес</span>
+                    </div>
+                    <div class="car-actions">
+                        <a href="model1.html" class="btn-details">
+                            <i class="fas fa-info-circle"></i>
+                            Подробнее
+                        </a>
+                        <a href="#request" class="btn-buy" data-car="Audi Q8 3.0 TFSI quattro (2019)">
+                            <i class="fas fa-shopping-cart"></i>
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mercedes C180 -->
+            <div class="car-card-modern" data-category="business">
+                <div class="car-image-wrapper">
+                    <img src="img/c1.jpg" alt="Mercedes-Benz C180" loading="lazy">
+                    <div class="car-badges">
+                        <span class="badge-instock">В наличии</span>
+                    </div>
+                    <div class="car-overlay">
+                        <a href="model2.html" class="overlay-btn">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                        <button class="overlay-btn favorite-btn" aria-label="Добавить в избранное">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-info">
+                    <h3>Mercedes-Benz C180</h3>
+                    <div class="car-specs">
+                        <span class="spec-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            2014
+                        </span>
+                        <span class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            1.6 л
+                        </span>
+                        <span class="spec-item">
+                            <i class="fas fa-cog"></i>
+                            АКПП
+                        </span>
+                    </div>
+                    <div class="car-price-modern">
+                        <div class="price-block">
+                            <span class="price-current">1 850 000 ₽</span>
+                        </div>
+                        <span class="price-month">от 29 900 ₽/мес</span>
+                    </div>
+                    <div class="car-actions">
+                        <a href="model2.html" class="btn-details">
+                            <i class="fas fa-info-circle"></i>
+                            Подробнее
+                        </a>
+                        <a href="#request" class="btn-buy" data-car="Mercedes-Benz C180 (2014)">
+                            <i class="fas fa-shopping-cart"></i>
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ford Focus 2 -->
+            <div class="car-card-modern" data-category="budget">
+                <div class="car-image-wrapper">
+                    <img src="img/focus1.jpg" alt="Ford Focus 2" loading="lazy">
+                    <div class="car-badges">
+                        <span class="badge-hot">Хит продаж</span>
+                        <span class="badge-rent">Аренда с выкупом</span>
+                    </div>
+                    <div class="car-overlay">
+                        <a href="model3.html" class="overlay-btn">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                        <button class="overlay-btn favorite-btn" aria-label="Добавить в избранное">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-info">
+                    <h3>Ford Focus 2</h3>
+                    <div class="car-specs">
+                        <span class="spec-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            2008
+                        </span>
+                        <span class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            1.6 л
+                        </span>
+                        <span class="spec-item">
+                            <i class="fas fa-cog"></i>
+                            МКПП
+                        </span>
+                    </div>
+                    <div class="car-price-modern">
+                        <div class="price-block">
+                            <span class="price-current">450 000 ₽</span>
+                        </div>
+                        <span class="price-month">от 12 500 ₽/мес</span>
+                    </div>
+                    <div class="car-actions">
+                        <a href="model3.html" class="btn-details">
+                            <i class="fas fa-info-circle"></i>
+                            Подробнее
+                        </a>
+                        <a href="#request" class="btn-buy" data-car="Ford Focus 2">
+                            <i class="fas fa-shopping-cart"></i>
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Добавьте остальные автомобили аналогичным образом -->
+        </div>
+        
+        <div class="section-footer">
+            <a href="#cars" class="btn-view-all">
+                <i class="fas fa-car"></i>
+                Посмотреть все автомобили
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <h2 class="section-title">Наши услуги</h2>
+            <p class="section-subtitle">Комплексные решения для вашего комфорта</p>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="services-grid-modern">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h3>Продажа авто</h3>
+                <p>Широкий выбор автомобилей на любой бюджет с гарантией качества</p>
+                <a href="#request" class="service-link">
+                    Подробнее
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="service-card highlight">
+                <div class="service-icon">
+                    <i class="fas fa-key"></i>
+                </div>
+                <h3>Аренда с выкупом</h3>
+                <p>Удобный путь к владению автомобилем с минимальным первоначальным взносом</p>
+                <a href="#request" class="service-link">
+                    Рассчитать
+                    <i class="fas fa-calculator"></i>
+                </a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Автоподбор</h3>
+                <p>Найдём лучший вариант по вашим параметрам и бюджету</p>
+                <a href="#request" class="service-link">
+                    Оставить заявку
+                    <i class="fas fa-file-alt"></i>
+                </a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <h3>Срочный выкуп</h3>
+                <p>Быстрая и выгодная продажа вашего автомобиля в течение 24 часов</p>
+                <a href="#request" class="service-link">
+                    Оценить авто
+                    <i class="fas fa-chart-line"></i>
+                </a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-piggy-bank"></i>
+                </div>
+                <h3>Автоломбард</h3>
+                <p>Деньги под залог автомобиля без проверки кредитной истории</p>
+                <a href="#request" class="service-link">
+                    Получить деньги
+                    <i class="fas fa-hand-holding-usd"></i>
+                </a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Комиссионная продажа</h3>
+                <p>Продажа вашего автомобиля с нашей профессиональной помощью</p>
+                <a href="#request" class="service-link">
+                    Выставить авто
+                    <i class="fas fa-car-side"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section id="offers" class="offers-section">
+        <div class="section-header">
+            <h2 class="section-title">Специальные предложения</h2>
+            <p class="section-subtitle">Уникальные условия для наших клиентов</p>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="offers-container">
+            <div class="offer-main">
+                <div class="offer-content">
+                    <span class="offer-badge">Акция месяца</span>
+                    <h3>Аренда Ford Focus 2 под выкуп</h3>
+                    <p>Специальное предложение! Выкуп всего за 8 месяцев с минимальным первоначальным взносом</p>
+                    <ul class="offer-features">
+                        <li><i class="fas fa-check-circle"></i> Первый взнос от 50 000 ₽</li>
+                        <li><i class="fas fa-check-circle"></i> Выкуп через 8 месяцев</li>
+                        <li><i class="fas fa-check-circle"></i> Страхование КАСКО в подарок</li>
+                        <li><i class="fas fa-check-circle"></i> Бесплатное обслуживание</li>
+                    </ul>
+                    <div class="offer-price">
+                        <span class="price-main">от 49 980 ₽/мес</span>
+                        <span class="price-discount">-20% на первый платеж</span>
+                    </div>
+                    <a href="#request" class="btn-offer" data-offer="Ford Focus 2 Аренда с выкупом">
+                        <i class="fas fa-bolt"></i>
+                        Забронировать сейчас
+                    </a>
+                </div>
+                <div class="offer-image">
+                    <img src="img/focus1.jpg" alt="Ford Focus 2" loading="lazy">
+                </div>
+            </div>
+            
+            <div class="offers-grid">
+                <div class="mini-offer">
+                    <div class="mini-offer-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h4>Скидка 10% на премиум-авто</h4>
+                    <p>При покупке любого премиум-автомобиля до конца месяца</p>
+                </div>
+                
+                <div class="mini-offer">
+                    <div class="mini-offer-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Бесплатное КАСКО</h4>
+                    <p>При покупке в кредит или аренде с выкупом</p>
+                </div>
+                
+                <div class="mini-offer">
+                    <div class="mini-offer-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h4>Трейд-ин +15%</h4>
+                    <p>Повышенная стоимость вашего авто при обмене</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-header">
+            <h2 class="section-title">Отзывы клиентов</h2>
+            <p class="section-subtitle">Что говорят наши клиенты о работе с rvDrive</p>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="testimonials-slider">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Александр Петров" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <h4>Александр Петров</h4>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                    "Покупал Audi Q8 через аренду с выкупом. Очень удобная система, 
+                    менеджеры помогли с оформлением всех документов. Машина в идеальном состоянии!"
+                </p>
+                <div class="testimonial-car">
+                    <i class="fas fa-car"></i>
+                    <span>Audi Q8 2019</span>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Мария Иванова" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <h4>Мария Иванова</h4>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                    "Срочно нужно было продать старую машину. Обратилась в rvDrive, 
+                    оценили по хорошей цене и продали за 3 дня. Очень довольна!"
+                </p>
+                <div class="testimonial-car">
+                    <i class="fas fa-car"></i>
+                    <span>Mercedes C180 2014</span>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Дмитрий Смирнов" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <h4>Дмитрий Смирнов</h4>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                    "Отличный сервис по автоподбору! Нашли мне идеальный вариант 
+                    по бюджету и параметрам. Все честно и прозрачно. Рекомендую!"
+                </p>
+                <div class="testimonial-car">
+                    <i class="fas fa-car"></i>
+                    <span>Ford Explorer 2012</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacts" class="contact-section">
+        <div class="section-header">
+            <h2 class="section-title">Контакты</h2>
+            <p class="section-subtitle">Свяжитесь с нами любым удобным способом</p>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card-modern">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Адрес</h3>
+                    <p>г. Москва, улица Адмирала Лазарева, д. 2</p>
+                </div>
+                
+                <div class="contact-card-modern">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Телефон</h3>
+                    <a href="tel:+79915914704">+7 (991) 591-47-04</a>
+                </div>
+                
+                <div class="contact-card-modern">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:mail@rvdrive.ru">mail@rvdrive.ru</a>
+                </div>
+                
+                <div class="contact-card-modern">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Режим работы</h3>
+                    <p>Пн-Пт: 9:00 - 21:00</p>
+                    <p>Сб-Вс: 10:00 - 20:00</p>
+                </div>
+            </div>
+            
+            <div class="contact-map">
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://yandex.ru/map-widget/v1/?whatshere%5Bzoom%5D=19&whatshere%5Bpoint%5D=37.543176,55.546761&lang=ru_RU"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen 
+                        loading="lazy"
+                        title="Расположение rvDrive на карте">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-social">
+            <h3>Мы в соцсетях</h3>
+            <div class="social-links">
+                <a href="https://t.me/rvDrive_Auto" class="social-link tg" target="_blank">
+                    <i class="fab fa-telegram-plane"></i>
+                    Telegram
+                </a>
+                <a href="https://wa.me/89915914704" class="social-link wa" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a href="https://www.youtube.com/@rvDrive-dy6cx" class="social-link yt" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                    YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request Form Section -->
+    <section id="request" class="request-section">
+        <div class="section-header">
+            <h2 class="section-title">Оставить заявку</h2>
+            <p class="section-subtitle">Мы свяжемся с вами в течение 15 минут</p>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="request-container">
+            <div class="request-info">
+                <h3>Почему выбирают нас?</h3>
+                <ul class="request-features">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Гарантия 6 месяцев</strong>
+                            <p>На все автомобили из нашего автопарка</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Бесплатная доставка</strong>
+                            <p>По Москве и области</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Юридическая поддержка</strong>
+                            <p>Помощь в оформлении всех документов</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Тест-драйв 24/7</strong>
+                            <p>В любое удобное для вас время</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="request-form-wrapper">
+                <form id="modernInspectionForm" class="modern-form">
+                    <div class="form-header">
+                        <h3>Заявка на подбор</h3>
+                        <p>Заполните форму и наш менеджер свяжется с вами</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="modernRequestType">
+                            <i class="fas fa-list-alt"></i>
+                            Тип заявки
+                        </label>
+                        <select id="modernRequestType" required>
+                            <option value="">Выберите тип заявки</option>
+                            <option value="Покупка">Покупка автомобиля</option>
+                            <option value="Аренда">Аренда автомобиля</option>
+                            <option value="Аренда с выкупом">Аренда с выкупом</option>
+                            <option value="Комиссия">Комиссионная продажа</option>
+                            <option value="Автоломбард">Автоломбард</option>
+                            <option value="Автоподбор">Автоподбор</option>
+                            <option value="Срочный выкуп">Срочный выкуп</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" id="modernCarSelectGroup">
+                        <label for="modernCarSelect">
+                            <i class="fas fa-car"></i>
+                            Выберите автомобиль
+                        </label>
+                        <select id="modernCarSelect">
+                            <option value="">Выберите автомобиль</option>
+                            <option value="Audi Q8 3.0 TFSI quattro (2019)">Audi Q8 3.0 TFSI quattro (2019)</option>
+                            <option value="Mercedes-Benz C180 (2014)">Mercedes-Benz C180 (2014)</option>
+                            <option value="Ford Focus 2">Ford Focus 2</option>
+                            <!-- Добавьте остальные автомобили -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" id="modernBudgetGroup" style="display: none;">
+                        <label for="modernBudget">
+                            <i class="fas fa-wallet"></i>
+                            Бюджет
+                        </label>
+                        <input type="text" id="modernBudget" placeholder="Например: 2 000 000 ₽">
+                    </div>
+                    
+                    <div class="form-group" id="modernDesiredCarGroup" style="display: none;">
+                        <label for="modernDesiredCar">
+                            <i class="fas fa-search"></i>
+                            Желаемая марка/модель
+                        </label>
+                        <input type="text" id="modernDesiredCar" placeholder="Например: Mercedes-Benz C-class">
+                    </div>
+                    
+                    <div class="form-group" id="modernPhotoGroup" style="display: none;">
+                        <label for="modernPhoto">
+                            <i class="fas fa-camera"></i>
+                            Фото автомобиля
+                        </label>
+                        <div class="file-upload">
+                            <input type="file" id="modernPhoto" accept="image/*" hidden>
+                            <label for="modernPhoto" class="file-label">
+                                <i class="fas fa-upload"></i>
+                                Загрузить фото
+                            </label>
+                            <span id="fileName">Файл не выбран</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="modernFullName">
+                                <i class="fas fa-user"></i>
+                                Ваше имя
+                            </label>
+                            <input type="text" id="modernFullName" required placeholder="Иванов Иван Иванович">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="modernPhone">
+                                <i class="fas fa-phone"></i>
+                                Телефон
+                            </label>
+                            <input type="tel" id="modernPhone" required placeholder="+7 (999) 123-45-67">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="modernMessage">
+                            <i class="fas fa-comment"></i>
+                            Комментарий
+                        </label>
+                        <textarea id="modernMessage" placeholder="Ваши пожелания или вопросы..."></textarea>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Отправить заявку
+                        </button>
+                        <p class="form-notice">
+                            <i class="fas fa-shield-alt"></i>
+                            Ваши данные защищены и не будут переданы третьим лицам
+                        </p>
+                    </div>
+                    
+                    <div id="modernFormMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>rv<span>Drive</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Автосалон rvDrive — надёжный партнёр в мире автомобилей. 
+                        Покупка, аренда и комплексные решения с 2020 года.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://t.me/rvDrive_Auto" target="_blank">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="https://wa.me/89915914704" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@rvDrive-dy6cx" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Автомобили</h4>
+                    <ul>
+                        <li><a href="#cars">Все автомобили</a></li>
+                        <li><a href="#cars" data-filter="premium">Премиум-авто</a></li>
+                        <li><a href="#cars" data-filter="business">Бизнес-класс</a></li>
+                        <li><a href="#cars" data-filter="suv">Внедорожники</a></li>
+                        <li><a href="#cars" data-filter="budget">Бюджетные авто</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="#request" data-type="Покупка">Покупка авто</a></li>
+                        <li><a href="#request" data-type="Аренда">Аренда авто</a></li>
+                        <li><a href="#request" data-type="Аренда с выкупом">Аренда с выкупом</a></li>
+                        <li><a href="#request" data-type="Срочный выкуп">Срочный выкуп</a></li>
+                        <li><a href="#request" data-type="Автоподбор">Автоподбор</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>г. Москва, ул. Адмирала Лазарева, д. 2</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+79915914704">+7 (991) 591-47-04</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:mail@rvdrive.ru">mail@rvdrive.ru</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Ежедневно 9:00-21:00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© 2025 rvDrive. Все права защищены.</p>
+                    <div class="footer-legal">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Пользовательское соглашение</a>
+                    </div>
+                </div>
+                
+                <div class="footer-payments">
+                    <span>Принимаем к оплате:</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa" title="Visa"></i>
+                        <i class="fab fa-cc-mastercard" title="MasterCard"></i>
+                        <i class="fas fa-credit-card" title="МИР"></i>
+                        <i class="fas fa-university" title="Банковский перевод"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-backtotop">
+            <button id="backToTop" aria-label="Наверх">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Заявка отправлена!</h3>
+            <p>Наш менеджер свяжется с вами в течение 15 минут</p>
+            <button class="modal-close-btn">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
